@@ -1,0 +1,38 @@
+name: Deploy MultiK8s
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # - uses: actions/checkout@v3
+
+      # - name: Setup PHP
+      #   uses: shivammathur/setup-php@v2
+      #   with:
+      #     php-version: '8.1'
+      #     extensions: mbstring, intl
+      #     ini-values: post_max_size=256M, max_execution_time=180
+      #     coverage: xdebug
+      #     tools: php-cs-fixer, phpunit
+
+      # - name: Test
+      #   run: |-
+      #     php composer.phar install
+      #     cp .env.example .env
+      #     php artisan key:generate
+      #     php artisan test
+
+      - name: Deployment
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: |-
+            cd /var/www/html/todo-app/
+            git pull

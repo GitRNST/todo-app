@@ -111,7 +111,7 @@ $todos = $stmt->fetchAll();
 </head>
 <body>
     <div class="container">
-        <h1>📝 Todo List - STG ENV</h1>
+        <h1>📝 Todo List - STG</h1>
         <form method="POST" action="add.php">
             <input type="text" name="task" placeholder="Enter new task..." required />
             <button type="submit">Add</button>

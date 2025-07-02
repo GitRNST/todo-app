@@ -22,7 +22,7 @@ $todos = $stmt->fetchAll();
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f4f6f8;
+            background:rgb(100, 82, 239);
             padding: 40px;
         }
 
@@ -132,7 +132,7 @@ $todos = $stmt->fetchAll();
                         </span>
                         <div class="actions">
                             <?php if (!$todo['status']): ?>
-                                <a class="mark" href="done.php?id=<?= $todo['id'] ?>">Mark as Done</a>
+                                <a class="mark" href="done.php?id=<?= $todo['id'] ?>">Mark as Completed</a>
                             <?php endif; ?>
                             <a href="index.php?edit=<?= $todo['id'] ?>">Edit</a>
                             <a class="delete" href="delete.php?id=<?= $todo['id'] ?>">Delete</a>

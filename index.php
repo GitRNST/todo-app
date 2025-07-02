@@ -22,7 +22,7 @@ $todos = $stmt->fetchAll();
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f4f6f8;
+            background:rgb(100, 82, 239);
             padding: 40px;
         }
 

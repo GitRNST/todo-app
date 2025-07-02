@@ -123,7 +123,7 @@ $todos = $stmt->fetchAll();
                         <form method="POST" style="width: 100%;align-items: center;">
                             <input type="hidden" name="edit_id" value="<?= $todo['id'] ?>">
                             <input type="text" name="edit_task" value="<?= htmlspecialchars($todo['task']) ?>" required>
-                            <button type="submit">Update</button>
+                            <button type="submit">Update Changes</button>
                             <a href="index.php">Cancel</a>
                         </form>
                     <?php else: ?>

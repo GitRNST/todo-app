@@ -1,6 +1,6 @@
 <?php
 
-require_once 'config/constant.php';
+$config = require_once 'config/constant.php';
 
 $host = DB_HOST;
 $dbname = DB_NAME;

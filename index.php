@@ -56,8 +56,8 @@ $todos = $stmt->fetchAll();
 
         button {
             padding: 10px 20px;
-            background-color:rgb(10, 0, 194);
-            background-color:rgb(174, 39, 39);
+            background-color:rgb(10, 194, 0);
+           /* background-color:rgb(174, 39, 39);*/
             color: white;
             border: none;
             border-radius: 6px;

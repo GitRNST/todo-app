@@ -29,7 +29,7 @@ $todos = $stmt->fetchAll();
         .container {
             max-width: 600px;
             margin: 0 auto;
-            background: #ffffff;
+            background-color: #000000;
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -37,7 +37,7 @@ $todos = $stmt->fetchAll();
 
         h1 {
             text-align: center;
-            color: #2c3e50;
+            color: #ffffff;
             margin-bottom: 25px;
         }
 
